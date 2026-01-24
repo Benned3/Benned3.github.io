@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Ben's Portfolio</title>
+        <link rel="stylesheet" href="styles.css"/>
+        <link rel="icon" type="image/x-icon" href="images/BenTag.png">
+    </head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap');
+        
+        body {
+            background-image:url(images/benbackground.png);
+            background-attachment: fixed;
+            background-repeat: no repeat;
+            background-size: cover;
+            font-family:"Eagle Lake", serif;
+            font-size:14px;
+            color:black;
+            margin:0px;
+            padding:0px;
+            overflow-y: scroll;
+        }
+        
+        .header{
+            position: sticky;
+            margin-top:30px;
+            display:block;
+            width:885px;
+            height:80px;
+            text-align: center;
+            padding-top: 20px;
+            font-size: 40px;
+            font-weight: bolder;
+            background-color: #90cec6;
+            margin-bottom:20px;
+        }
+        
+        .back {
+            position: fixed;
+            left:20px;
+            text-align: center;
+            font-size: 40px;
+            margin-top:-20px;
+        }
+        
+        .back img {
+            height: 150px;
+            object-fit: cover;
+            padding-top: 0px;
+        }
+        
+        #container{
+            width: 900px;
+            position: sticky;
+            display:block;
+            margin-left:auto;
+            margin-right:auto;
+            margin-top:20px;
+            padding:0px;
+        }
+        
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 0px;
+        }
+        
+        .column {
+            flex: 50%;
+            padding: 0 0px;
+        }
+        
+        .block{
+            border:#90cec6 solid 6px;
+            height: auto;
+            width: 425px;
+            margin-bottom: 20px;
+            background-color: #90cec6;
+            transition: border .2s ease-in-out;
+            text-align: center;
+        }
+
+        .block img {
+            height: auto;
+            width: 425px;
+            margin: 0px;
+            object-fit: cover;
+            border:0px solid black;
+        }
+        
+        #about {
+            border:#90cec6 solid 6px;
+            height: auto;
+            width: 395px;
+            margin-bottom: 20px;
+            background-color: #90cec6;
+            transition: border .2s ease-in-out;
+            text-align: center;
+            padding:15px;
+        }
+        
+        .art {
+            display: block;
+            height:auto;
+            width:875px;
+            background-color:#90cec6;
+            border: 5px solid #90cec6;
+            margin-bottom: 20px;
+            position: sticky;
+        }
+        
+        .art img {
+            object-fit:cover;
+            height:auto;
+            width:875px;
+            margin:0px;
+            padding:0px;
+        }
+        
+        .art iframe {
+            object-fit:cover;
+            height:550px;
+            width:875px;
+            margin:0px;
+            padding:0px;
+        }
+        
+        h1 {
+            color:black;
+            background-color:#90cec6;
+            text-align: center;
+            font-size: 20px;
+            padding-top:-5px;
+            margin: 0px;
+            padding: 2px;
+            overflow: hidden;
+            transition: color .2s ease-in-out;
+        }
+        
+        h2 {
+            color:black;
+            font-size:14px;
+            text-align:right;
+            font-weight: normal;
+            padding-right:5px;
+        }
+        
+        a:link, a:active, a:visited {
+            text-decoration: none; 
+            color: black; 
+        }
+        
+        a:hover {
+            color: white;
+        }
+        
+        #footer{
+            color: white;
+            position: sticky;
+            text-align: center;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+    </style>
+    <body>
+        <a href="index.html"><div class="back"><img src="images/Arrow.png"/></div></a>
+        <div id="container">
+            <div class="header">Fighting Fellas</div>
+            <div class="row">
+                <div class="column">
+                    <div id="about"><h1>About</h1><p>This is a game I made in collaboration with another artist (<a href="https://www.artstation.com/kezia">Kezia</a>) and dev (<a href="https://pollygamingreal.itch.io">Polly</a>). The logo is also made by Kezia.</p></div>
+                </div>
+                <div class="column">
+                    <div class="block"><h1>Thumbnail</h1><img src="images/thumbnails/Fighting%20fellas%20Thumbnail.jpg" alt="fighting fellas thumbnails"/></div>
+                </div>
+            </div>
+            <div class="art"><img src="https://cdnb.artstation.com/p/assets/images/images/084/716/105/large/ben-van-delden-schermafbeelding-2025-02-08-171851.jpg?1739033593" alt=""/><h2>My Level: "Rooftops"</h2></div>
+            <div class="art"><img src="https://cdnb.artstation.com/p/assets/images/images/086/114/333/large/ben-van-delden-schermafbeelding-2025-03-19-135955.jpg?1742409178" alt=""/><h2>The second level Keiza made, in which I helped with lighting, balancing, and added more height differences.</h2></div>
+            <div class="art"><img src="https://cdnb.artstation.com/p/assets/images/images/084/733/517/large/ben-van-delden-schermafbeelding-2025-02-09-125816.jpg?1739102631" alt=""/><h2>Modular assets of my map.</h2></div>
+            <div class="art"><img src="https://cdnb.artstation.com/p/assets/images/images/084/733/519/large/ben-van-delden-schermafbeelding-2025-02-09-125659.jpg?1739102634" alt=""/><h2>Modular assets of my map.</h2></div>
+            <div class="art"><img src="https://cdnb.artstation.com/p/assets/images/images/084/716/097/original/ben-van-delden-videozondertitelgemaaktmetclipchamp9-ezgif-com-video-to-gif-converter.gif?1739033579" alt=""/><h2>The characters of the game I made.</h2></div>
+            <div class="art"><img src="https://cdna.artstation.com/p/assets/images/images/084/736/644/original/ben-van-delden-videozondertitelgemaaktmetclipchamp6-ezgif-com-video-to-gif-converter.gif?1739110262" alt=""/><h2>The player ragdolls I made for the characters.</h2></div>
+            <div class="art"><img src="https://cdnb.artstation.com/p/assets/images/images/084/716/103/original/ben-van-delden-videozondertitelgemaaktmetclipchamp14-ezgif-com-video-to-gif-converter.gif?1739033590" alt=""/><h2>The weapons of the game, of which I made the bat, the axe, and the ninja star.</h2></div>
+            <div class="art"><img src="https://cdnb.artstation.com/p/assets/images/images/084/716/099/original/ben-van-delden-videozondertitelgemaaktmetclipchamp12-ezgif-com-video-to-gif-converter.gif?1739033582" alt=""/><h2>The hit, dash, dizzy, and blood particles I made.</h2></div>
+            <div class="art"><img src="https://cdnb.artstation.com/p/assets/images/images/084/716/101/original/ben-van-delden-videozondertitelgemaaktmetclipchamp13-ezgif-com-video-to-gif-converter.gif?1739033587" alt=""/><h2>The death and win particles I made.</h2></div>
+        </div>  
+        
+        <div id="footer"><p>Made by <a href="">Liza</a></p><p>&copy;Ben's Portfolio. All Rights Reserved.</p></div>
+    </body>
+</html>
