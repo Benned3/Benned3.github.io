@@ -141,8 +141,44 @@
             height: 245px;
             filter: brightness(1.3);
         }
+
+        .snowflake {
+          position: fixed;
+          top: -20px;
+          left: var(--left);
+          width: var(--size);
+          height: var(--size);
+          background: white;
+          border-radius: 50%;
+          opacity: 0.8;
+          animation: fall var(--duration) linear infinite;
+          animation-delay: var(--delay);
+          pointer-events: none;
+        }
+
+        @keyframes fall {
+          0%   { transform: translateY(0) translateX(0); }
+          25%  { transform: translateY(25vh) translateX(20px); }
+          50%  { transform: translateY(55vh) translateX(-15px); }
+          75%  { transform: translateY(80vh) translateX(10px); }
+          100% { transform: translateY(110vh) translateX(-5px); opacity: 0; }
+        }
+        
+        @media (prefers-reduced-motion: reduce) {
+          .snowflake {
+            animation: none;
+            display: none;
+          }
+        }
     </style>
     <body>
+        <div class="snow">
+          <span class="snowflake" style="--left:10%; --duration:8s; --delay:-2s; --size:6px; --drift:40px;"></span>
+          <span class="snowflake" style="--left:30%; --duration:12s; --delay:-5s; --size:10px; --drift:-30px;"></span>
+          <span class="snowflake" style="--left:50%; --duration:15s; --delay:-8s; --size:8px; --drift:50px;"></span>
+          <span class="snowflake" style="--left:70%; --duration:10s; --delay:-3s; --size:12px; --drift:-20px;"></span>
+          <span class="snowflake" style="--left:90%; --duration:13s; --delay:-6s; --size:7px; --drift:30px;"></span>
+        </div>
         <img src="images/BenTag.png" alt="Ben Logo" class="header"/>
         <div id="snowglobe"><img src="images/snow/Glass_Bowl.png" alt="snowglobe"/></div>
         <div id="container">
